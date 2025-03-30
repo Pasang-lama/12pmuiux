@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+           padding: 50px;
+            background-color: green;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+        /* .box:first-child{
+            background-color: orange;
+        }
+        .box:last-child{
+            background-color: orange;
+        } */
+        .box:nth-child(3n){
+            background-color: black;
+        }
+        .box:nth-last-child(2){
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- pseudo class => elements state=>hover, active, visited, first, last state (:)  -->
+<div class="wrapper">
+    <div class="box">box 1</div>
+    <div class="box">box 2</div>
+    <div class="box">box 3</div>
+    <div class="box">box 4</div>
+    <div class="box">box 5</div>
+    <div class="box">box 6</div>
+    <div class="box">box 7</div>
+    <div class="box">box 8</div>
+    <div class="box">box 9</div>
+    <div class="box">box 10</div>
+</div>
+</body>
+</html>

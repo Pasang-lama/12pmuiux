@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #46BEA5;
+        }
+
+        form {
+            background-color: white;
+            width: 500px;
+            margin: 100px auto;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        form h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #46BEA5;
+        }
+
+        form .field {
+            display: block;
+            width: 100%;
+            padding: 20px 15px;
+            border: 1px solid gray;
+        }
+        form  .margin-button{
+            margin-bottom: 30px;
+        }
+
+        form  .showpassword{
+            margin-top: 10px;
+        }
+        form button{
+            display: block;
+            background-color: #0B857A;
+            color: white;
+            border: none;
+            padding: 10px 30px;
+            text-transform: uppercase;
+            margin: 20px auto;
+            border-radius: 4px;
+        }
+        form p{
+            text-align: center;
+        }
+
+        form p a{
+            color: #46BEA5;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="">
+        <h1>Login</h1>
+        <input type="email" name="email" id="email" class="field margin-button" placeholder="Email">
+        <input type="password" name="password" id="password" class="field" placeholder="Password">
+
+        <input type="checkbox" name="showpassword" id="showpassword" class="showpassword"><label for="showpassword">Show password</label>
+        <button>Sign In</button>
+
+        <p>Forgot <a href="">username / password</a>?</p>
+        <p>Dont have an account <a href="">Sign up</a>?</p>
+
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+article {
+  background-color: black;
+  width: 500px;
+  color: white;
+  /* margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-right: 100px; */
+  margin-inline: auto;
+  margin-block: 50px;
+  padding: 50px 100px;
+
+  /* border-width: 10px;
+  border-style: dotted;
+  border-color: brown; */
+
+  border: 10px solid brown;
+  border-radius: 100px 0px;
+}

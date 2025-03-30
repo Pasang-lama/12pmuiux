@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height: 100%;
+            width: 100%;
+        }
+        article{
+            width: 500px;
+            margin: 100px auto;
+            position: relative;
+        }
+        article .details{
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            color: white;
+            background-color: rgba(255, 166, 0, 0.899);
+            padding: 20px;
+        }
+
+        button{
+            background-color: green;
+            color: white;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 5px;
+            position: relative;
+        }
+        button span{
+            background-color: orange;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: -15px;
+            right: -9px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <img src="images/demo.webp" alt="">
+        <div class="details">
+            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil, enim?</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero rerum illum et ut natus eius expedita inventore, tempore nisi nostrum?</p>
+            <time datetime="">15 Jan 2025</time>
+        </div>
+    </article>
+
+    <button>Add to Card <span>4</span></button>
+    
+</body>
+</html>

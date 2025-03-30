@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            height: 600px;
+            background-color: green;
+            position: relative;
+        }
+        .wrapper .box {
+            height: 100px;
+            width: 100px;
+            background-color: orange;
+            position: absolute;
+            bottom: 20px;
+            right: 50px;
+            z-index: 1;
+        }
+        .wrapper .box2 {
+            height: 100px;
+            width: 100px;
+            background-color: #ff0000;
+            position: absolute;
+            bottom: 40px;
+            right: 80px;
+            z-index: 2;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            position: fixed;
+            bottom: 50px;
+            left: 50px;
+        }
+
+        .sub-header{
+            position: sticky;
+            top: 100px;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            font-size: 20px;
+            text-align: center;
+        }
+        body{
+            height: 5000px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="box"></div>
+        <div class="box2"></div>
+    </div>
+    <div class="sub-header">
+        position sticky
+    </div>
+    <button>Book Now</button>
+
+
+
+
+    <!-- position
+     1. relative
+     2. absolute
+     3. sticky
+     4. fixed
+     5. static (defeault) -->
+
+</body>
+
+</html>

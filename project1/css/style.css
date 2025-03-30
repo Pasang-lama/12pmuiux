@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+body{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: var(--secondary-font);
+    color: #333;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+/* common class  */
+
+.d-flex{
+    display: flex;
+    gap: 20px;
+}
+
+.container{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-heading{
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    font-size: 24px;
+    line-height: 29px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    font-family: var(--primary-font);
+}
+.margin-top{
+    margin-top: 80px;
+}
+
+
+
+
+/* css variable  */
+:root{
+    --primary-font: "Saira Semi Condensed", sans-serif;
+    --secondary-font: "Inter", sans-serif;
+    --primary-color: #E82E85;
+}
+
+
+
+
+header{
+    .black{
+        background-color: black;
+        color: white;
+        padding: 10px 50px;
+        display: flex;
+        justify-content: space-between;
+        .left{
+            a{
+                font-size: 12px;
+            
+            }
+        }
+    }
+    .white{
+        background-color: white;
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 100px;
+        img{
+            height: 50px;
+        }
+        nav{
+            flex-grow: 1;
+            display: flex;
+            gap: 50px;
+            a{
+                font-family: var(--primary-font);
+                font-size: 15px;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+        .right-buttons{
+            button{
+                background-color: transparent;
+                border: none;
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+.trending {
+    .news-wrapper{
+        display: flex;
+        gap: 30px;
+        article{
+            img{
+                height: 220px;
+            }
+            h3{
+                font-family: var(--primary-font);
+                font-size: 22px;
+                line-height: 26px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            time{
+                font-size: 14px;
+                color: gray;
+            }
+        }
+    }
+}
+
+
+.banner-article{
+    position: relative;
+    .details{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        color: white;
+        .category{
+            background-color: var(--primary-color);
+            padding: 5px 10px;
+            font-family: var(--primary-font);
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            border-radius: 2px;
+        }
+        h2{
+            font-family: var(--primary-font);
+            font-size: 33px;
+            line-height: 40px;
+            font-weight: 600;
+            margin: 10px 0px;
+
+        }
+        .summary{
+            font-size: 12px;
+            color: #bbbbbb;
+            font-weight: 500;
+        }
+    }
+}
+
+.banner-section{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 5px;
+    grid-template-rows: 250px 250px;
+}
+.banner-article:first-child{
+    grid-row: span 2;
+}

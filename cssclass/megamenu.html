@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        header {
+            display: flex;
+            background-color: black;
+            color: white;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 100px;
+        }
+
+        header nav .main-menu {
+            display: flex;
+        }
+
+        header nav .main-menu li {
+            padding: 30px;
+            position: relative;
+        }
+
+        header nav .main-menu li:hover {
+            background-color: orange;
+        }
+
+        header nav .main-menu .sub-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #181818;
+            display: none;
+        }
+
+        header nav .main-menu li:hover .sub-menu {
+            display: block;
+        }
+
+        header nav .main-menu li .sub-menu li {
+            white-space: nowrap;
+        }
+        header nav  .inner-sub-menu{ 
+
+            background-color: #020202;
+            position: absolute;
+            left: 100%;
+            top: 0px;
+            display: none;
+        
+        }
+        header nav .sub-menu li:hover .inner-sub-menu{
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>LOGO</h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Company</a>
+                    <ul class="sub-menu">
+                        <li><a href="">About us</a></li>
+                        <li><a href="">Opening</a></li>
+                        <li><a href="">Message from CEO</a></li>
+                        <li><a href="">Our History</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Resources</a>
+                    <ul class="sub-menu">
+                        <li><a href="">News and Article</a></li>
+                        <li><a href="">Our Gallery</a>
+                            <ul class="inner-sub-menu">
+                                <li><a href="">Images</a></li>
+                                <li><a href="">Video</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Blogs</a></li>
+                        <li><a href="">Notices</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+
+</html>
