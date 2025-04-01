@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px 100px;
+        }
+        button{
+            background-color: rgba(0, 183, 255, 0.562);
+            color: white;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 10px;
+            /* transition-property: background-color;
+            transition-duration: 0.5s;
+            transition-timing-function: linear;
+            transition-delay: 0.5s; */
+            /* transition: background-color 0.5s linear; */
+            transition:  all 0.4s ease;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+          
+        }
+        .wrapper{
+            height: 600px;
+            width: 100%;
+            background-color: green;
+            position: relative;
+        }
+    
+        .box{
+            margin-top: 40px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transform: rotate(45deg);
+        }
+        .box span{
+            transform: rotate(-45deg);
+        }
+        .scale{
+            height: 200px;
+            width: 200px;
+            background-color: black;
+            transition: 0.5s;
+        }
+        .scale:hover{
+            transform: scale(0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <button>Sign In</button>
+    </div>
+    <div class="box"> <span>Hello</span></div>
+    <div class="scale"></div>
+    <!-- transform 
+    translate
+    rotate
+    scale
+    skew
+     -->
+    
+</body>
+</html>

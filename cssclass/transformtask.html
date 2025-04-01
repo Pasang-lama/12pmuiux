@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0px 100px;
+        }
+        figure{
+            height: 500px;
+            width: 500px;
+            background-color: green;
+            overflow: hidden;
+            clip-path: polygon(50% 0%, 100% 0, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        }
+        figure img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+        figure img:hover{
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+
+    <figure>
+        <img src="images/demo.webp" alt="">
+    </figure>
+    
+</body>
+</html>

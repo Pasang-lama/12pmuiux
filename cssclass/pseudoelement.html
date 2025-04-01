@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0px 300px;
+        }
+        p::first-letter {
+            color: red;
+            initial-letter: 3;
+            font-weight: 800;
+        }
+        p::first-line {
+            color: orange;
+        }
+        p::selection {
+            background-color: green;
+            color: white;
+        }
+        ul li::marker{
+            color: blue;
+        }
+        ul li::before{
+            content: "MR. ";
+        }
+        ul li::after{
+            content: " Thank you";
+        }
+        .heading{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        
+        .heading::before{
+            content: "";
+            height: 2px;
+            width: 50px;
+            background-color: red;
+            display: block;
+        }
+        .custom-link{
+            text-decoration: none;
+            color: inherit;
+            padding-bottom: 10px;
+            position: relative;
+        }
+        .custom-link::before{
+            content: "";
+            height: 2px;
+            width: 10px;
+            background-color: red;
+            display: block;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            transition: 0.4s;
+        }
+        .custom-link:hover::before{
+            width: 100%;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- pseudo class => used to select any state of element  :-->
+    <!-- pseudo element => used to select any specefic part of element :: -->
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia perspiciatis ea omnis ex? Quis vel corrupti
+        ipsum natus incidunt debitis praesentium nam nisi hic minima nulla deserunt sunt sit libero, sed, eveniet
+        accusantium. Optio dignissimos quod dolor consequuntur corporis voluptatum exercitationem voluptates maxime
+        nihil magnam animi maiores ipsa, consectetur quae odit voluptas culpa saepe suscipit rerum sint. Ipsum impedit
+        ipsa reprehenderit unde nobis ab, culpa porro minus labore, dignissimos sed doloribus odio velit commodi
+        voluptatum blanditiis maiores exercitationem vel accusamus molestiae quam sint consectetur? Natus esse rem unde
+        tempore voluptatem ipsam impedit enim alias laborum voluptates nihil repellat reiciendis tempora doloremque
+        aliquam, dolore deleniti quasi eaque, accusantium error quos dolorum sed! Eius debitis voluptates voluptas
+        beatae modi veritatis laudantium velit, quidem molestiae laborum ullam aut facere minima, accusamus quasi
+        assumenda totam odio culpa non. Dicta eligendi enim eos ipsam et quia omnis numquam odio quisquam laboriosam?
+        Dolorem culpa, repellendus nostrum soluta sapiente molestias obcaecati incidunt debitis saepe consequatur iste
+        illo quam exercitationem magnam harum possimus nam, suscipit sed non alias! Consequuntur, architecto? Debitis
+        optio modi magni minima voluptas aspernatur facilis dignissimos dolor rem cum. Laboriosam ipsa ullam, ratione
+        vel molestiae distinctio veritatis quasi beatae fugiat, recusandae corrupti similique, culpa laudantium!</p>
+
+    <ul>
+        <li>Ram</li>
+        <li>Shyam</li>
+        <li>Hari</li>
+    </ul>
+
+    <h3 class="heading">About us</h3>
+
+    <a href="" class="custom-link">Shop Now</a>
+
+
+</body>
+
+</html>
