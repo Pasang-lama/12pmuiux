@@ -1,0 +1,15 @@
+.banner-section{
+    .carousel-inner{
+        .carousel-item{
+            background-color: black;
+            img{
+                opacity: 0.7;
+                height: 80vh;
+            }
+            .carousel-caption{
+                bottom: 50%;
+                transform: translateY(50%);
+            }
+        }
+    }
+}

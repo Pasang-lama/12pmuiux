@@ -1,0 +1,44 @@
+.header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.648);
+    .navbar-nav{
+        .nav-item{
+            .nav-link{
+                font-family: $heading-font;
+                letter-spacing: 0.5px;
+                svg{
+                    color: $primary-color !important;
+                    transition: all 0.3s linear;
+
+                }
+                &:hover{
+                    color: $primary-color !important;
+                    svg{
+                        transform: rotate(-180deg);
+                    }
+                }
+            }
+
+        }
+    
+    }
+    .right-content{
+        button{
+            background-color: transparent;
+            border: none;
+            color: white;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            font-size: 20px;
+            transition: all 0.3s ease;
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+    }
+}
